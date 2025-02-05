@@ -4,7 +4,7 @@ Go back.
 
 <% @currencies.keys.each do |to_currency| %>
   <li>
-  <a href="convert_url">
+  <a href="/<%= @original_currency %>/<%= to_currency %>">
   Convert 1 <%= @original_currency %> to <%= to_currency %>...
   </a>
   </li>
